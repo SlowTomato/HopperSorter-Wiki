@@ -1,6 +1,6 @@
 # HopperSorter
 
-* [About the plugin](#about-the-plugin)
+* [About the plugin](https://github.com/SlowTomato/HopperSorter_public/wiki#about-the-plugin)
 * [Supported server version](#supported-version)
 * [Requirements](#requirements)
 * [Commands/Permissions](Commands-Permissions)
