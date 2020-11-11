@@ -1,14 +1,13 @@
 # HopperSorter
 
 * [About the plugin](https://github.com/SlowTomato/HopperSorter_public/wiki#about-the-plugin)
-* [Supported server version](#supported-version)
-* [Requirements](#requirements)
-* [Commands/Permissions](Commands-Permissions)
+* [Supported server version](https://github.com/SlowTomato/HopperSorter_public/wiki#supported-version)
+* [Requirements](https://github.com/SlowTomato/HopperSorter_public/wiki#requirements)
+* [Commands/Permissions](https://github.com/SlowTomato/HopperSorter_public/wiki/Commands-Permissions)
 * [Configuration](Configuration)
-  * [Hopper](Configuration#hopper)
-  * [Particle](Configuration#particle)
-  * [Smelt](Configuration#smelt)
-  * [Multiple Workers](Configuration#multiple-workers)
+  * [Hopper](https://github.com/SlowTomato/HopperSorter_public/wiki/Configuration#hopper)
+  * [Particle](https://github.com/SlowTomato/HopperSorter_public/wiki/Configuration#particle)
+  * [Smelt](https://github.com/SlowTomato/HopperSorter_public/wiki/Configuration#smelt)
 
 ### About the plugin
 
