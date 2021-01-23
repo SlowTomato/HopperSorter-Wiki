@@ -37,12 +37,7 @@ special_items:
       display_name: '&6Hopper'
       # Available placeholders
       lore:
-        - '&6Level: &f{CURRENT_LEVEL} &6➜ &f{NEXT_LEVEL}'
-        - '&6Max Power: &f{CURRENT_POWER} &6➜ &f{NEXT_POWER}'
-        - '&6Max Material: &f{CURRENT_MATERIAL} &6➜ &f{NEXT_MATERIAL}'
-        - '&6Max Block Per Material: &f{CURRENT_BLOCK} &6➜ &f{NEXT_BLOCK}'
-        - '&6Distance Limit: &f{CURRENT_DISTANCE} &6➜ &f{NEXT_DISTANCE}'
-        - '&6Transfer item every &f{CURRENT_SPEED} &6➜ &f{NEXT_SPEED} &6ticks'
+        - ' '
     slot: 13
 
   upgrade_button:
