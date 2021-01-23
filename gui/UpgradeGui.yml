@@ -1,0 +1,127 @@
+#Do not change this version
+version: 1.0
+
+# Fill the inventory
+FillItem:
+  enable: true
+  item:
+    material: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    display_name: ' '
+    lore:
+      - ' '
+
+gui_settings:
+  name: 'Upgrade Hopper'
+  # Available sizes: 9, 18, 27, 36, 45, 54
+  size: 36
+
+special_items:
+  # {CURRENT_LEVEL}: return current level
+  # {CURRENT_POWER}: return current max power
+  # {CURRENT_MATERIAL}: return current max material amount
+  # {CURRENT_BLOCK}: return current max block per material
+  # {CURRENT_SUBUSER}: return current max sub user
+  # {CURRENT_DISTANCE}: return current max distance
+  # {CURRENT_SPEED}: return current item transfer speed
+  # {NEXT_LEVEL}: return next level
+  # {NEXT_POWER}: return next max power
+  # {NEXT_MATERIAL}: return next max material amount
+  # {NEXT_BLOCK}: return next max block per material
+  # {NEXT_SUBUSER}: return next max sub user
+  # {NEXT_DISTANCE}: return next max distance
+  # {NEXT_SPEED}: return next item transfer tick
+  hopper_info:
+    item:
+      amount: 1
+      display_name: '&6Hopper'
+      # Available placeholders
+      lore:
+        - '&6Level: &f{CURRENT_LEVEL} &6➜ &f{NEXT_LEVEL}'
+        - '&6Max Power: &f{CURRENT_POWER} &6➜ &f{NEXT_POWER}'
+        - '&6Max Material: &f{CURRENT_MATERIAL} &6➜ &f{NEXT_MATERIAL}'
+        - '&6Max Block Per Material: &f{CURRENT_BLOCK} &6➜ &f{NEXT_BLOCK}'
+        - '&6Distance Limit: &f{CURRENT_DISTANCE} &6➜ &f{NEXT_DISTANCE}'
+        - '&6Transfer item every &f{CURRENT_SPEED} &6➜ &f{NEXT_SPEED} &6ticks'
+    slot: 13
+
+  upgrade_button:
+    available:
+      item:
+        material: GREEN_STAINED_GLASS_PANE
+        amount: 1
+        display_name: '&aUpgrade'
+        lore:
+          - '&6Level: &f{CURRENT_LEVEL} &6➜ &a{NEXT_LEVEL}'
+          - '&6Max Power: &f{CURRENT_POWER} &6➜ &a{NEXT_POWER}'
+          - '&6Max Material: &f{CURRENT_MATERIAL} &6➜ &a{NEXT_MATERIAL}'
+          - '&6Max Block Per Material: &f{CURRENT_BLOCK} &6➜ &a{NEXT_BLOCK}'
+          - '&6Distance Limit: &f{CURRENT_DISTANCE} &6➜ &a{NEXT_DISTANCE}'
+          - '&6Transfer item every &f{CURRENT_SPEED} &6➜ &a{NEXT_SPEED} &6ticks'
+          - ''
+          - '&6Cost: &f{MONEY}'
+    reached_max_level:
+      item:
+        material: WHITE_STAINED_GLASS_PANE
+        amount: 1
+        display_name: '&6You have reached the max level!'
+        lore:
+          - '&6Current Level: &f{CURRENT_LEVEL}'
+          - '&6Current Max Power: &f{CURRENT_POWER}'
+          - '&6Current Max Material: &f{CURRENT_MATERIAL}'
+          - '&6Current Max Block Per Material: &f{CURRENT_BLOCK}'
+          - '&6Current Distance Limit: &f{CURRENT_DISTANCE} '
+          - '&6Transfer item every &f{CURRENT_SPEED} &6ticks'
+    unavailable:
+      item:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        display_name: '&cUpgrade'
+        lore:
+          - '&6Level: &f{CURRENT_LEVEL} &6➜ &c{NEXT_LEVEL}'
+          - '&6Max Power: &f{CURRENT_POWER} &6➜ &c{NEXT_POWER}'
+          - '&6Max Material: &f{CURRENT_MATERIAL} &6➜ &c{NEXT_MATERIAL}'
+          - '&6Max Block Per Material: &f{CURRENT_BLOCK} &6➜ &c{NEXT_BLOCK}'
+          - '&6Distance Limit: &f{CURRENT_DISTANCE} &6➜ &c{NEXT_DISTANCE}'
+          - '&6Transfer item every &f{CURRENT_SPEED} &6➜ &c{NEXT_SPEED} &6ticks'
+          - ''
+          - '&6Cost: &c{MONEY}'
+          - ''
+          - '&cYou don''t have enough money to upgrade!'
+    slot: 22
+
+
+# You can add extra item for decoration in this section by following the format
+items:
+  1:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 0
+  2:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 8
+  3:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 18
+  4:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 26

@@ -1,0 +1,98 @@
+#Do not change this version
+version: 1.1
+
+# Fill the inventory
+FillItem:
+  enable: true
+  item:
+    material: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    display_name: ' '
+    lore:
+      - ' '
+
+gui_settings:
+  name: 'Sub Users List'
+  # Available sizes: 9, 18, 27, 36, 45, 54
+  size: 27
+
+special_items:
+  subusers_head:
+    item:
+      display_name: '&r&6{PLAYER}'
+      amount: 1
+      lore:
+        - ' '
+    slots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+  add_user:
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      display_name: '&aAdd User'
+      amount: 1
+      lore:
+        - ''
+    slots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+  previous_page:
+    item:
+      material: MAP
+      amount: 1
+      display_name: '&aPrevious Page'
+      lore:
+        - ''
+    slot: 9
+  next_page:
+    item:
+      material: MAP
+      amount: 1
+      display_name: '&aNext Page'
+      lore:
+        - ''
+    slot: 17
+# You can add extra item for decoration in this section by following the format
+items:
+  1:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 0
+  2:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 8
+  3:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 18
+  4:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 26

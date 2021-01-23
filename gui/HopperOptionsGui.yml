@@ -1,0 +1,130 @@
+#Do not change this version
+version: 2.0
+
+# Fill the inventory
+FillItem:
+  enable: true
+  item:
+    material: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    display_name: ' '
+    lore:
+      - ' '
+
+gui_settings:
+  name: 'Options'
+  # Available sizes: 9, 18, 27, 36, 45, 54
+  size: 27
+
+special_items:
+  owner_skull:
+    item:
+      amount: 1
+      # Available placeholder {PLAYER}: return hopper owner name
+      display_name: '&r&6Owner {PLAYER}'
+      # Available placeholder {PLAYER}: return hopper owner name
+      lore:
+        - ' '
+    slot: 4
+  transfer_ownership:
+    item:
+      material: WRITABLE_BOOK
+      amount: 1
+      display_name: '&6Transfer OwnerShip'
+      # Available placeholder {AMOUNT}: return linked blocks amount
+      lore:
+        - ''
+    slot: 10
+  power:
+    item:
+      material: COAL
+      amount: 1
+      display_name: '&6Fuel'
+      #Available placeholder {POWER}: return hopper's power
+      lore:
+        - '&aCurrent Power: &6{POWER}'
+    slot: 12
+  out_of_power:
+    item:
+      material: RED_STAINED_GLASS_PANE
+      amount: 1
+      display_name: '&4Out Of Fuel'
+      #Available placeholder {POWER}: return hopper's power
+      lore:
+        - '&aCurrent Power: &6{POWER}'
+    slot: 12
+  manage_subusers:
+    item:
+      material: PLAYER_HEAD
+      amount: 1
+      display_name: '&aManage SubUsers'
+      # Available placeholder {SUBUSERS_AMOUNT}: return the amount of the sub users
+      lore:
+        - '&6Total SubUsers: &a{SUBUSERS_AMOUNT}'
+    slot: 14
+  switch:
+    enable:
+      item:
+        material: REDSTONE_TORCH
+        amount: 1
+        display_name: '&aPower: On'
+        lore:
+          - ''
+    disable:
+      item:
+        material: LEVER
+        amount: 1
+        display_name: '&4Power: Off'
+        lore:
+          - ''
+    locked:
+      item:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        display_name: '&cLocked'
+        lore:
+          - 'Current hopper has been locked.'
+          - 'Reason: {Reason}'
+    slot: 16
+  upgrade:
+    item:
+      material: HOPPER
+      amount: 1
+      display_name: '&6Upgrade'
+      lore:
+        - ' '
+    slot: 13
+# You can add extra item for decoration in this section by following the format
+items:
+  1:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 0
+  2:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 8
+  3:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 18
+  4:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 26

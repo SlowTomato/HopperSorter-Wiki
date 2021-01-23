@@ -1,0 +1,78 @@
+#Do not change this version
+version: 1.1
+
+# Fill the inventory
+FillItem:
+  enable: true
+  item:
+    material: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    display_name: ' '
+    lore:
+      - ' '
+
+gui_settings:
+  name: 'Select A Type'
+  # Available sizes: 9, 18, 27, 36, 45, 54
+  size: 27
+
+special_items:
+  storage:
+    item:
+      # animated, the material will keep switching
+      materials:
+        - CHEST
+        - SHULKER_BOX
+        #- BARREL ( > 1.14 item )
+      amount: 1
+      display_name: '&aStorage'
+      lore:
+        - ''
+    slot: 12
+  furnace:
+    item:
+      # animated, the material will keep switching
+      materials:
+        - FURNACE
+        #- SMOKER
+        #- BLAST_FURNACE ( > 1.14 item )
+      amount: 1
+      display_name: '&aFurnace'
+      lore:
+        - ''
+    slot: 14
+
+# You can add extra item for decoration in this section by following the format
+items:
+  1:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 0
+  2:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 8
+  3:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 18
+  4:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 26

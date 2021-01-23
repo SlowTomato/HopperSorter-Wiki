@@ -1,0 +1,134 @@
+#Do not change this version
+version: 1.1
+
+# Fill the inventory
+FillItem:
+  enable: true
+  item:
+    material: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    display_name: ' '
+    lore:
+      - ' '
+
+gui_settings:
+  name: 'Linked Blocks List'
+  # Available sizes: 9, 18, 27, 36, 45, 54
+  size: 27
+
+special_items:
+  linked_block:
+    status_ok:
+      item:
+        display_name: '&bStatus: OK!'
+        amount: 1
+        lore:
+          - '&bLocation'
+          - '&6World: &7{LOCATION_WORLD}'
+          - '&6X: &7{LOCATION_X}'
+          - '&6Y: &7{LOCATION_Y}'
+          - '&6Z: &7{LOCATION_Z}'
+    missing:
+      item:
+        material: BEDROCK
+        display_name: '&cStatus: Missing!'
+        amount: 1
+        lore:
+          - '&bLocation'
+          - '&cWorld: &7{LOCATION_WORLD}'
+          - '&cX: &7{LOCATION_X}'
+          - '&cY: &7{LOCATION_Y}'
+          - '&cZ: &7{LOCATION_Z}'
+    slots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+  add_block:
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      display_name: '&aAdd Block'
+      amount: 1
+      lore:
+        - ''
+    slots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+  show_block:
+    toggle_on:
+      item:
+        material: ENDER_EYE
+        data: 0
+        amount: 1
+        display_name: 'Show linked blocks'
+        lore:
+          - 'Particle will be spawned on the blocks'
+          - 'that you have linked!'
+    toggle_off:
+      item:
+        material: ENDER_PEARL
+        data: 0
+        amount: 1
+        display_name: 'Show linked blocks'
+        lore:
+          - 'Particle will be spawned on the blocks'
+          - 'that you have linked!'
+    slot: 26
+  previous_page:
+    item:
+      material: MAP
+      amount: 1
+      display_name: '&aPrevious Page'
+      lore:
+        - ''
+    slot: 9
+  next_page:
+    item:
+      material: MAP
+      amount: 1
+      display_name: '&aNext Page'
+      lore:
+        - ''
+    slot: 17
+# You can add extra item for decoration in this section by following the format
+items:
+  1:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 0
+  2:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 8
+  3:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 18
+  4:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 26

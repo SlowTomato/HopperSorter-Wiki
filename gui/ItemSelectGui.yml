@@ -1,0 +1,72 @@
+#Do not change this version
+version: 1.1
+
+# Fill the inventory
+FillItem:
+  enable: true
+  item:
+    material: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    display_name: ' '
+    lore:
+      - ' '
+
+gui_settings:
+  name: 'Select a material'
+  # Available sizes: 9, 18, 27, 36, 45, 54
+  size: 54
+
+special_items:
+  selected_material:
+    slot: 22
+  continue_button:
+    item:
+      material: GREEN_STAINED_GLASS
+      amount: 1
+      display_name: '&aContinue'
+      lore:
+        - ''
+    slot: 38
+  cancel_button:
+    item:
+      material: RED_STAINED_GLASS
+      amount: 1
+      display_name: '&4Cancel'
+      lore:
+        - ''
+    slot: 42
+
+# You can add extra item for decoration in this section by following the format
+items:
+  1:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 0
+  2:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 8
+  3:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 45
+  4:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 53

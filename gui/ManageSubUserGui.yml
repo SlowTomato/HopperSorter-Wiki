@@ -1,0 +1,118 @@
+#Do not change this version
+version: 1.1
+
+# Fill the inventory
+FillItem:
+  enable: true
+  item:
+    material: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    display_name: ' '
+    lore:
+      - ''
+
+gui_settings:
+  name: 'Manage SubUser'
+  # Available sizes: 9, 18, 27, 36, 45, 54
+  size: 27
+
+special_items:
+  subuser:
+    item:
+      amount: 1
+      # Available Placeholder {PLAYER}
+      display_name: '&r&6{PLAYER}'
+      # Available placeholder {PLAYER}
+      lore:
+        - ''
+    slot: 4
+  permissions:
+    # Show this item if all the block status are fine ( not missing )
+    edit_material:
+      has_permission:
+        item:
+          material: REDSTONE_TORCH
+          amount: 1
+          display_name: '&aEdit Material Permission'
+          lore:
+            - '&6Enable: &atrue'
+            - ' '
+            - '&7- Able to edit the linked material'
+            - '&7- Able to add new material'
+            - '&7- Able to remove material'
+      no_permission:
+        item:
+          material: LEVER
+          amount: 1
+          display_name: '&cEdit Material Permission'
+          lore:
+            - '&6Enable: &cfalse'
+            - ' '
+            - '&7- Able to edit the linked material'
+            - '&7- Able to add new material'
+            - '&7- Able to remove material'
+      slot: 12
+    manage_subuser:
+      has_permission:
+        item:
+          material: REDSTONE_TORCH
+          amount: 1
+          display_name: '&aManage SubUser Permission'
+          lore:
+            - '&6Enable: &atrue'
+            - ' '
+            - '&7- Able to add new sub user'
+            - '&7- Able to remove sub user'
+      no_permission:
+        item:
+          material: LEVER
+          amount: 1
+          display_name: '&cManage SubUser Permission'
+          lore:
+            - '&6Enable: &cfalse'
+            - ' '
+            - '&7- Able to add new sub user'
+            - '&7- Able to remove sub user'
+      slot: 14
+  remove_user:
+    item:
+      material: RED_STAINED_GLASS_PANE
+      amount: 1
+      display_name: '&cRemove User'
+      lore:
+        - ''
+    slot: 22
+# You can add extra item for decoration in this section by following the format
+items:
+  1:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 0
+  2:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 8
+  3:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 18
+  4:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 26

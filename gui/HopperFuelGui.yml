@@ -1,0 +1,84 @@
+#Do not change this version
+version: 2.0
+
+# Fill the inventory
+FillItem:
+  enable: true
+  item:
+    material: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    display_name: ' '
+    lore:
+      - ' '
+
+gui_settings:
+  name: 'Hopper Fuel'
+  # Available sizes: 9, 18, 27, 36, 45, 54
+  size: 27
+
+special_items:
+
+  power:
+    item:
+      material: COAL
+      amount: 1
+      display_name: '&6Power'
+      lore:
+        - '&aCurrently Power: &6{POWER}'
+    slot: 4
+
+  fuel:
+    slot: 13
+
+  add_power_button:
+    add_power:
+      item:
+        material: GREEN_STAINED_GLASS_PANE
+        amount: 1
+        display_name: '&aAdd Power'
+        # Available placeholders {POWER}: return hopper's power
+        lore:
+          - '&aCurrently Power: &6{POWER}'
+    power_max:
+      item:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        display_name: '&cPower is already max!'
+        lore:
+          - '&aCurrently Power: &6{POWER}'
+    slot: 22
+
+# You can add extra item for decoration in this section by following the format
+items:
+  1:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 0
+  2:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 8
+  3:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 18
+  4:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 26
