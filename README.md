@@ -4,7 +4,7 @@
 * [Supported server version](https://github.com/SlowTomato/HopperSorter_public/wiki#supported-version)
 * [Requirements](https://github.com/SlowTomato/HopperSorter_public/wiki#requirements)
 * [Commands/Permissions](https://github.com/SlowTomato/HopperSorter_public/wiki/Commands-Permissions)
-* [Configuration](Configuration)
+* [Configuration](https://github.com/SlowTomato/HopperSorter_public/wiki/Configuration)
   * [Hopper](https://github.com/SlowTomato/HopperSorter_public/wiki/Configuration#hopper)
   * [Particle](https://github.com/SlowTomato/HopperSorter_public/wiki/Configuration#particle)
   * [Smelt](https://github.com/SlowTomato/HopperSorter_public/wiki/Configuration#smelt)
