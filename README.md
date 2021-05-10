@@ -3,15 +3,12 @@
 * [About the plugin](https://github.com/SlowTomato/HopperSorter_public/wiki#about-the-plugin)
 * [Supported server version](https://github.com/SlowTomato/HopperSorter_public/wiki#supported-version)
 * [Requirements](https://github.com/SlowTomato/HopperSorter_public/wiki#requirements)
-* [Commands/Permissions](https://github.com/SlowTomato/HopperSorter_public/wiki/Commands-Permissions)
+* [Commands/Permissions](https://github.com/SlowTomato/HopperSorter_public/wiki/Commands-&-Permissions)
 * [Configuration](https://github.com/SlowTomato/HopperSorter_public/wiki/Configuration)
-  * [Hopper](https://github.com/SlowTomato/HopperSorter_public/wiki/Configuration#hopper)
-  * [Particle](https://github.com/SlowTomato/HopperSorter_public/wiki/Configuration#particle)
-  * [Smelt](https://github.com/SlowTomato/HopperSorter_public/wiki/Configuration#smelt)
 
 ### About the plugin
 
-HopperSorter is a plugin that had been develop by SlowTomato for few months. It's a player helper plugin. HopperSorter can sort the item from the chest and then transfer the item to the block(chest, furnace or other block that has a inventory) that player set in the hopper.
+HopperSorter is a plugin that had been develop by SlowTomato for few months. HopperSorter can sort the item from the chest and then transfer the item to the block(chest, furnace or other block that has a inventory) that player set in the hopper.
 
 
 ### Supported Version
@@ -26,9 +23,22 @@ HopperSorter is a plugin that had been develop by SlowTomato for few months. It'
 - [x] 1.15.x
 - [x] 1.16.x
 
+### Supported Database
+
+- Yaml
+- Sql
+- MySql
+- MongoDb
+- MariaDb
+
 ### Requirements
 
 The plugin has some requirements to able to run on the server
 
 * [Vault](https://dev.bukkit.org/projects/vault)
 * Permission Plugin (that support vault) 
+
+[**Join the discord server if you need any help**](https://discord.com/invite/FJ5Q4uN)
+
+
+
