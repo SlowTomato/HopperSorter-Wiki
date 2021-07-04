@@ -22,6 +22,7 @@ HopperSorter is a plugin that had been develop by SlowTomato for few months. Hop
 - [x] 1.14.x
 - [x] 1.15.x
 - [x] 1.16.x
+- [x] 1.17
 
 ### Supported Database
 
