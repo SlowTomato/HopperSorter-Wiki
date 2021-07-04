@@ -37,7 +37,7 @@ special_items:
       display_name: '&6Hopper'
       # Available placeholders
       lore:
-        - ' '
+        - ''
     slot: 13
 
   upgrade_button:

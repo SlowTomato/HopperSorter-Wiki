@@ -1,5 +1,5 @@
 #Do not change this version
-version: 2.0
+version: 2.1
 
 # Fill the inventory
 FillItem:
@@ -54,7 +54,7 @@ special_items:
         # {AMOUNT}: linked blocks amount
         lore:
           - '&aStatus: Block missing!'
-          - '&aaLinked Blocks: &b{AMOUNT}'
+          - '&aLinked Blocks: &b{AMOUNT}'
           - '&a{MISSING} block is missing!'
     # Show this item when there's no linked block
     none:
@@ -106,32 +106,76 @@ special_items:
     slot: 45
   destination:
     status_ok:
-      item:
-        # {BLOCK} will return what block player has linked to
-        material: "{BLOCK}"
+      store:
+        # {BLOCK} returns the type of the block they linked
+        material: '{BLOCK}'
+        display_name: '&6Unsortable items will get transfer to this this block'
         amount: 1
-        display_name: '&6Status: Ok'
-        # Available placeholder {AMOUNT}: return linked blocks amount
         lore:
-          - ' '
-          - '&6Click to link to another block'
+          - ''
+          - '&6World: &7{LOCATION_WORLD}'
+          - '&6X: &7{LOCATION_X}'
+          - '&6Y: &7{LOCATION_Y}'
+          - '&6Z: &7{LOCATION_Z}'
+          - ''
+          - '&7Click to link to other block'
+      furnace:
+        # {BLOCK} returns the type of the block they linked
+        material: '{BLOCK}'
+        display_name: '&6Unsortable items will get transfer to this this block'
+        amount: 1
+        lore:
+          - ''
+          - '&6World: &7{LOCATION_WORLD}'
+          - '&6X: &7{LOCATION_X}'
+          - '&6Y: &7{LOCATION_Y}'
+          - '&6Z: &7{LOCATION_Z}'
+          - ''
+          - '&7Click to link to other block'
+      void:
+        material: 'END_PORTAL_FRAME'
+        display_name: '&6Unsortable items will get thrown to the void!'
+        amount: 1
+        lore:
+          - ''
+          - '&7Click to link to other block'
     missing:
-      item:
+      store:
         material: BEDROCK
-        amount: 1
         display_name: '&cBlock Missing!'
+        amount: 1
         lore:
-          - ' '
-          - '&6Click to link to another block'
+          - '&cThe block should be chest/shulker box/barrel'
+          - ''
+          - '&cWorld: &7{LOCATION_WORLD}'
+          - '&cX: &7{LOCATION_X}'
+          - '&cY: &7{LOCATION_Y}'
+          - '&cZ: &7{LOCATION_Z}'
+          - ''
+          - '&cPlease place back the block or'
+          - '&cClick me to link a new block'
+      furnace:
+        material: BEDROCK
+        display_name: '&cBlock Missing!'
+        amount: 1
+        lore:
+          - '&cThe block should be furnace/blast furnace/smoker'
+          - ''
+          - '&cWorld: &7{LOCATION_WORLD}'
+          - '&cX: &7{LOCATION_X}'
+          - '&cY: &7{LOCATION_Y}'
+          - '&cZ: &7{LOCATION_Z}'
+          - ''
+          - '&cPlease place back the block or'
+          - '&cClick me to link a new block'
     # Show this item when there's no linked block
     none:
-      item:
-        material: BARRIER
-        amount: 1
-        display_name: '&6You haven''t set a block yet!'
-        lore:
-          - ' '
-          - '&6Click to link to another block'
+      material: BARRIER
+      amount: 1
+      display_name: '&6You haven''t set a block yet!'
+      lore:
+        - ' '
+        - '&6Click to link to another block'
     slot: 52
 # You can add extra item for decoration in this section by following the format
 items:

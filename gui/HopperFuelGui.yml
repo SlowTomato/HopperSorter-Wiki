@@ -36,16 +36,21 @@ special_items:
         material: GREEN_STAINED_GLASS_PANE
         amount: 1
         display_name: '&aAdd Power'
-        # Available placeholders {POWER}: return hopper's power
+        # Available placeholders
+        # {POWER}: return hopper's power
+        # {MAX_POWER}: return hopper's max power
         lore:
-          - '&aCurrently Power: &6{POWER}'
+          - '&aCurrent Power: &6{POWER}'
     power_max:
       item:
         material: RED_STAINED_GLASS_PANE
         amount: 1
         display_name: '&cPower is already max!'
+        # Available placeholders
+        # {POWER}: return hopper's power
+        # {MAX_POWER}: return hopper's max power
         lore:
-          - '&aCurrently Power: &6{POWER}'
+          - '&aCurrent Power: &6{POWER}/{MAX_POWER}'
     slot: 22
 
 # You can add extra item for decoration in this section by following the format

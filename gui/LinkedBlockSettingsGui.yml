@@ -1,5 +1,5 @@
 #Do not change this version
-version: 1.1
+version: 1.2
 
 # Fill the inventory
 FillItem:
@@ -18,12 +18,63 @@ gui_settings:
 
 special_items:
   linked_block:
-    item:
-      amount: 1
-      display_name: '&r&6{PLAYER}'
-      # Available placeholders {BLOCK_X}, {BLOCK_Y}, {BLOCK_Z}, {BLOCK_WORLD}
-      lore:
-        - ''
+    status_ok:
+      store:
+        material: '{BLOCK}'
+        display_name: ''
+        amount: 1
+        # Available placeholders {BLOCK_X}, {BLOCK_Y}, {BLOCK_Z}, {BLOCK_WORLD}
+        lore:
+          - '&6World: &7{LOCATION_WORLD}'
+          - '&6X: &7{LOCATION_X}'
+          - '&6Y: &7{LOCATION_Y}'
+          - '&6Z: &7{LOCATION_Z}'
+      furnace:
+        material: '{BLOCK}'
+        display_name: ' '
+        amount: 1
+        lore:
+          - '&6World: &7{LOCATION_WORLD}'
+          - '&6X: &7{LOCATION_X}'
+          - '&6Y: &7{LOCATION_Y}'
+          - '&6Z: &7{LOCATION_Z}'
+      void:
+        material: 'BARRIER'
+        display_name: '&cVoid Chest'
+        amount: 1
+        lore:
+          - 'The item will get thrown to the void!'
+          - ''
+    missing:
+      store:
+        material: 'BEDROCK'
+        display_name: '&cThe block is missing!'
+        amount: 1
+        # Available placeholders {BLOCK_X}, {BLOCK_Y}, {BLOCK_Z}, {BLOCK_WORLD}
+        lore:
+          - ''
+          - '&6The block should be Chest, Shulker Box, Barrel, etc!'
+          - ''
+          - '&cWorld: &7{LOCATION_WORLD}'
+          - '&cX: &7{LOCATION_X}'
+          - '&cY: &7{LOCATION_Y}'
+          - '&cZ: &7{LOCATION_Z}'
+          - ''
+          - '&6You can either remove this or place back the block!'
+      furnace:
+        material: 'BEDROCK'
+        display_name: '&cThe block is missing!'
+        amount: 1
+        lore:
+          - ''
+          - '&6The block should be Furnace, Blast Furnace, Smoker!'
+          - ''
+          - '&cWorld: &7{LOCATION_WORLD}'
+          - '&cX: &7{LOCATION_X}'
+          - '&cY: &7{LOCATION_Y}'
+          - '&cZ: &7{LOCATION_Z}'
+          - ' '
+          - '&6You can either remove this or place back the block!'
     slot: 4
   smelt:
     # Show this item if all the block status are fine ( not missing )

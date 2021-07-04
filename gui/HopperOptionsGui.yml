@@ -1,5 +1,5 @@
 #Do not change this version
-version: 2.0
+version: 2.1
 
 # Fill the inventory
 FillItem:
@@ -31,7 +31,6 @@ special_items:
       material: WRITABLE_BOOK
       amount: 1
       display_name: '&6Transfer OwnerShip'
-      # Available placeholder {AMOUNT}: return linked blocks amount
       lore:
         - ''
     slot: 10
@@ -40,18 +39,22 @@ special_items:
       material: COAL
       amount: 1
       display_name: '&6Fuel'
-      #Available placeholder {POWER}: return hopper's power
+      # Available placeholders
+      # {POWER}: return hopper's power
+      # {MAX_POWER}: return hopper's max power
       lore:
-        - '&aCurrent Power: &6{POWER}'
+        - '&aCurrent Power: &6{POWER} / {MAX_POWER}'
     slot: 12
   out_of_power:
     item:
       material: RED_STAINED_GLASS_PANE
       amount: 1
       display_name: '&4Out Of Fuel'
-      #Available placeholder {POWER}: return hopper's power
+      # Available placeholders
+      # {POWER}: return hopper's power
+      # {MAX_POWER}: return hopper's max power
       lore:
-        - '&aCurrent Power: &6{POWER}'
+        - '&aCurrent Power: &6{POWER}/{MAX_POWER}'
     slot: 12
   manage_subusers:
     item:
@@ -94,6 +97,32 @@ special_items:
       lore:
         - ' '
     slot: 13
+  redstone_override:
+    enabled:
+      item:
+        material: REDSTONE
+        amount: 1
+        display_name: '&6Toggleable by redstone'
+        lore:
+          - '&6Can be toggled by Redstone: &atrue'
+          - ''
+    disabled:
+      item:
+        material: REDSTONE
+        amount: 1
+        display_name: '&6Toggleable by redstone'
+        lore:
+          - '&6Can be toggled by Redstone: &cfalse'
+          - ' '
+    disabled_by_server:
+      item:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        display_name: '&6Toggleable by redstone'
+        lore:
+          - '&cThis feature is disabled by the server.'
+          - ' '
+    slot: 22
 # You can add extra item for decoration in this section by following the format
 items:
   1:

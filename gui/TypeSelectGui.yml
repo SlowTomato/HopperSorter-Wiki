@@ -1,5 +1,5 @@
 #Do not change this version
-version: 1.1
+version: 1.2
 
 # Fill the inventory
 FillItem:
@@ -41,6 +41,17 @@ special_items:
       lore:
         - ''
     slot: 14
+  void:
+    item:
+      # animated, the material will keep switching
+      materials:
+        - END_PORTAL_FRAME
+      amount: 1
+      display_name: '&aVoid'
+      lore:
+        - '&6Throw the item into the void!'
+        - ''
+    slot: 22
 
 # You can add extra item for decoration in this section by following the format
 items:
