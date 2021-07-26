@@ -1,5 +1,5 @@
 #Do not change this version
-version: 2.1
+version: 2.2
 
 # Fill the inventory
 FillItem:
@@ -14,7 +14,7 @@ FillItem:
 gui_settings:
   name: 'Options'
   # Available sizes: 9, 18, 27, 36, 45, 54
-  size: 27
+  size: 54
 
 special_items:
   owner_skull:
@@ -25,7 +25,7 @@ special_items:
       # Available placeholder {PLAYER}: return hopper owner name
       lore:
         - ' '
-    slot: 4
+    slot: 13
   transfer_ownership:
     item:
       material: WRITABLE_BOOK
@@ -33,7 +33,7 @@ special_items:
       display_name: '&6Transfer OwnerShip'
       lore:
         - ''
-    slot: 10
+    slot: 48
   power:
     item:
       material: COAL
@@ -44,7 +44,7 @@ special_items:
       # {MAX_POWER}: return hopper's max power
       lore:
         - '&aCurrent Power: &6{POWER} / {MAX_POWER}'
-    slot: 12
+    slot: 29
   out_of_power:
     item:
       material: RED_STAINED_GLASS_PANE
@@ -55,7 +55,7 @@ special_items:
       # {MAX_POWER}: return hopper's max power
       lore:
         - '&aCurrent Power: &6{POWER}/{MAX_POWER}'
-    slot: 12
+    slot: 29
   manage_subusers:
     item:
       material: PLAYER_HEAD
@@ -64,7 +64,7 @@ special_items:
       # Available placeholder {SUBUSERS_AMOUNT}: return the amount of the sub users
       lore:
         - '&6Total SubUsers: &a{SUBUSERS_AMOUNT}'
-    slot: 14
+    slot: 50
   switch:
     enable:
       item:
@@ -88,7 +88,34 @@ special_items:
         lore:
           - 'Current hopper has been locked.'
           - 'Reason: {Reason}'
-    slot: 16
+    slot: 33
+  item_suction:
+    enable:
+      item:
+        material: REDSTONE_TORCH
+        amount: 1
+        display_name: '&6Item Suction: &aOn'
+        lore:
+          - '&6Auto pick up nearby item from the ground'
+          - ''
+    disable:
+      item:
+        material: LEVER
+        amount: 1
+        display_name: '&6Item Suction: &4Off'
+        lore:
+          - '&6Auto pick up nearby item from the ground'
+          - ''
+    locked:
+      item:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        display_name: '&6Item Suction: &4Off'
+        lore:
+          - '&6Auto pick up nearby item from the ground'
+          - ''
+          - '&cYou don''t have permission to use this'
+    slot: 32
   upgrade:
     item:
       material: HOPPER
@@ -96,7 +123,7 @@ special_items:
       display_name: '&6Upgrade'
       lore:
         - ' '
-    slot: 13
+    slot: 40
   redstone_override:
     enabled:
       item:
@@ -122,7 +149,7 @@ special_items:
         lore:
           - '&cThis feature is disabled by the server.'
           - ' '
-    slot: 22
+    slot: 30
 # You can add extra item for decoration in this section by following the format
 items:
   1:
@@ -148,7 +175,7 @@ items:
       display_name: ' '
       lore:
         - ' '
-    slot: 18
+    slot: 45
   4:
     item:
       material: ORANGE_STAINED_GLASS_PANE
@@ -156,4 +183,4 @@ items:
       display_name: ' '
       lore:
         - ' '
-    slot: 26
+    slot: 53

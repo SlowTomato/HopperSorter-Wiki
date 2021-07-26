@@ -53,6 +53,9 @@ special_items:
           - '&6Max Block Per Material: &f{CURRENT_BLOCK} &6➜ &a{NEXT_BLOCK}'
           - '&6Distance Limit: &f{CURRENT_DISTANCE} &6➜ &a{NEXT_DISTANCE}'
           - '&6Transfer item every &f{CURRENT_SPEED} &6➜ &a{NEXT_SPEED} &6ticks'
+          - '&6Can use item suction: &f{CURRENT_ITEM_SUCTION} &6➜ &a{NEXT_ITEM_SUCTION}'
+          - '&6Item suction ticks: &f{CURRENT_ITEM_SUCTION_TICK} &6➜ &a{NEXT_ITEM_SUCTION_TICK} &6ticks'
+          - '&6Item suction range: &f{CURRENT_ITEM_SUCTION_RANGE} &6➜ &a{NEXT_ITEM_SUCTION_RANGE}'
           - ''
           - '&6Cost: &f{MONEY}'
     reached_max_level:
@@ -67,6 +70,9 @@ special_items:
           - '&6Current Max Block Per Material: &f{CURRENT_BLOCK}'
           - '&6Current Distance Limit: &f{CURRENT_DISTANCE} '
           - '&6Transfer item every &f{CURRENT_SPEED} &6ticks'
+          - '&6Can use item suction: &f{CURRENT_ITEM_SUCTION}'
+          - '&6Item suction ticks: &f{CURRENT_ITEM_SUCTION_TICK}'
+          - '&6Item suction range: &f{CURRENT_ITEM_SUCTION_RANGE}'
     unavailable:
       item:
         material: RED_STAINED_GLASS_PANE
@@ -79,6 +85,9 @@ special_items:
           - '&6Max Block Per Material: &f{CURRENT_BLOCK} &6➜ &c{NEXT_BLOCK}'
           - '&6Distance Limit: &f{CURRENT_DISTANCE} &6➜ &c{NEXT_DISTANCE}'
           - '&6Transfer item every &f{CURRENT_SPEED} &6➜ &c{NEXT_SPEED} &6ticks'
+          - '&6Can use item suction: &f{CURRENT_ITEM_SUCTION} &6➜ &c{NEXT_ITEM_SUCTION}'
+          - '&6Item suction ticks: &f{CURRENT_ITEM_SUCTION_TICK} &6➜ &c{NEXT_ITEM_SUCTION_TICK} &6ticks'
+          - '&6Item suction range: &f{CURRENT_ITEM_SUCTION_RANGE} &6➜ &c{NEXT_ITEM_SUCTION_RANGE}'
           - ''
           - '&6Cost: &c{MONEY}'
           - ''
