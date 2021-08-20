@@ -24,6 +24,7 @@ special_items:
   # {CURRENT_SUBUSER}: return current max sub user
   # {CURRENT_DISTANCE}: return current max distance
   # {CURRENT_SPEED}: return current item transfer speed
+  # {CURRENT_ITEM_AMOUNT}: return current item transfer amount
   # {NEXT_LEVEL}: return next level
   # {NEXT_POWER}: return next max power
   # {NEXT_MATERIAL}: return next max material amount
@@ -31,11 +32,11 @@ special_items:
   # {NEXT_SUBUSER}: return next max sub user
   # {NEXT_DISTANCE}: return next max distance
   # {NEXT_SPEED}: return next item transfer tick
+  # {NEXT_ITEM_AMOUNT}: return next item transfer amount
   hopper_info:
     item:
       amount: 1
       display_name: '&6Hopper'
-      # Available placeholders
       lore:
         - ''
     slot: 13
@@ -53,6 +54,7 @@ special_items:
           - '&6Max Block Per Material: &f{CURRENT_BLOCK} &6➜ &a{NEXT_BLOCK}'
           - '&6Distance Limit: &f{CURRENT_DISTANCE} &6➜ &a{NEXT_DISTANCE}'
           - '&6Transfer item every &f{CURRENT_SPEED} &6➜ &a{NEXT_SPEED} &6ticks'
+          - '&6Transfer item amount &f{CURRENT_ITEM_AMOUNT} &6➜ &a{NEXT_ITEM_AMOUNT}'
           - '&6Can use item suction: &f{CURRENT_ITEM_SUCTION} &6➜ &a{NEXT_ITEM_SUCTION}'
           - '&6Item suction ticks: &f{CURRENT_ITEM_SUCTION_TICK} &6➜ &a{NEXT_ITEM_SUCTION_TICK} &6ticks'
           - '&6Item suction range: &f{CURRENT_ITEM_SUCTION_RANGE} &6➜ &a{NEXT_ITEM_SUCTION_RANGE}'
@@ -70,6 +72,7 @@ special_items:
           - '&6Current Max Block Per Material: &f{CURRENT_BLOCK}'
           - '&6Current Distance Limit: &f{CURRENT_DISTANCE} '
           - '&6Transfer item every &f{CURRENT_SPEED} &6ticks'
+          - '&6Transfer item amount &f{CURRENT_ITEM_AMOUNT}'
           - '&6Can use item suction: &f{CURRENT_ITEM_SUCTION}'
           - '&6Item suction ticks: &f{CURRENT_ITEM_SUCTION_TICK}'
           - '&6Item suction range: &f{CURRENT_ITEM_SUCTION_RANGE}'
@@ -85,6 +88,7 @@ special_items:
           - '&6Max Block Per Material: &f{CURRENT_BLOCK} &6➜ &c{NEXT_BLOCK}'
           - '&6Distance Limit: &f{CURRENT_DISTANCE} &6➜ &c{NEXT_DISTANCE}'
           - '&6Transfer item every &f{CURRENT_SPEED} &6➜ &c{NEXT_SPEED} &6ticks'
+          - '&6Transfer item amount &f{CURRENT_ITEM_AMOUNT} &6➜ &c{NEXT_ITEM_AMOUNT}'
           - '&6Can use item suction: &f{CURRENT_ITEM_SUCTION} &6➜ &c{NEXT_ITEM_SUCTION}'
           - '&6Item suction ticks: &f{CURRENT_ITEM_SUCTION_TICK} &6➜ &c{NEXT_ITEM_SUCTION_TICK} &6ticks'
           - '&6Item suction range: &f{CURRENT_ITEM_SUCTION_RANGE} &6➜ &c{NEXT_ITEM_SUCTION_RANGE}'
