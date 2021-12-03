@@ -1,5 +1,5 @@
 #Do not change this version
-version: 2.2
+version: 2.3
 
 # Fill the inventory
 FillItem:
@@ -150,6 +150,14 @@ special_items:
           - '&cThis feature is disabled by the server.'
           - ' '
     slot: 30
+  back:
+    item:
+      material: OAK_DOOR
+      amount: 1
+      display_name: '&6Back'
+      lore:
+        - ''
+    slot: 45
 # You can add extra item for decoration in this section by following the format
 items:
   1:
@@ -169,14 +177,6 @@ items:
         - ' '
     slot: 8
   3:
-    item:
-      material: ORANGE_STAINED_GLASS_PANE
-      amount: 1
-      display_name: ' '
-      lore:
-        - ' '
-    slot: 45
-  4:
     item:
       material: ORANGE_STAINED_GLASS_PANE
       amount: 1

@@ -1,0 +1,105 @@
+#Do not change this version
+version: 1.0
+
+# Fill the inventory
+FillItem:
+  enable: true
+  item:
+    material: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    display_name: ' '
+    lore:
+      - ' '
+
+gui_settings:
+  name: 'Confirmation'
+  # Available sizes: 9, 18, 27, 36, 45, 54
+  size: 36
+
+special_items:
+  display_item:
+    transfer_ownership:
+      sender:
+        item:
+          display_name: '&6Transferring Ownership'
+          lore:
+            - '&6You are transferring the ownership to {PLAYER}'
+      receiver:
+        item:
+          display_name: '&6Receiving Ownership'
+          lore:
+            - '&6{PLAYER} is transferring hopper ownership to you'
+    remove_hopper:
+      item:
+        display_name: '&4Remove hopper'
+        lore:
+          - '&4You are removing the hopper!'
+    add_subuser:
+      item:
+        display_name: '&6Adding Subuser'
+        lore:
+          - '&6You are adding {PLAYER} to the hopper'
+    remove_subuser:
+      item:
+        display_name: '&6Removing Subuser'
+        lore:
+          - '&6You are removing {PLAYER} from the hopper'
+    remove_material:
+      item:
+        display_name: '&6Removing Material'
+        lore:
+          - '&6You are removing {MATERIAL} from the hopper'
+    slot: 13
+
+  confirm_button:
+    item:
+      material: GREEN_STAINED_GLASS
+      amount: 1
+      display_name: '&aContinue'
+      lore:
+        - ''
+    slot: 21
+
+  cancel_button:
+    item:
+      material: RED_STAINED_GLASS
+      amount: 1
+      display_name: '&4Cancel'
+      lore:
+        - ''
+    slot: 23
+
+# You can add extra item for decoration in this section by following the format
+items:
+  1:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 0
+  2:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 8
+  3:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 27
+  4:
+    item:
+      material: ORANGE_STAINED_GLASS_PANE
+      amount: 1
+      display_name: ' '
+      lore:
+        - ' '
+    slot: 35
