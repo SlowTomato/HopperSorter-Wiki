@@ -22,12 +22,14 @@ HopperSorter is a plugin that had been develop by SlowTomato for few months. Hop
 - [x] 1.14.x
 - [x] 1.15.x
 - [x] 1.16.x
-- [x] 1.17
+- [x] 1.17.x
+- [x] 1.18.x
+- [x] 1.19
 
 ### Supported Database
 
-- Yaml
-- Sql
+- Yaml (deprecated, might be removed in the future version)
+- Sqlite (default)
 - MySql
 - MongoDb
 - MariaDb
@@ -37,9 +39,9 @@ HopperSorter is a plugin that had been develop by SlowTomato for few months. Hop
 The plugin has some requirements to able to run on the server
 
 * [Vault](https://dev.bukkit.org/projects/vault)
-* Permission Plugin (that support vault) 
 
 [**Join the discord server if you need any help**](https://discord.com/invite/FJ5Q4uN)
+
 
 
 
